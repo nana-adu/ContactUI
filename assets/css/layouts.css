@@ -18,8 +18,8 @@ body {
 }
 
 .logo {
-	margin-top:0;
-	margin-bottom:70px;
+	margin-top:-30px;
+	margin-bottom:110px;
 	color:#824b60;
 	font-weight:bold;
 }
@@ -29,13 +29,13 @@ body {
 	height:90px;
 	position:absolute;
 	top:0;
-	left:90px;
+	left:80px;
 }
 
 .logo > h2 {
 	position:absolute;
 	top:17px;
-	left:170px;
+	left:155px;
 	text-transform: uppercase;
 	font-size:20px;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .container textarea {
-	height:65px;
+	height:100px;
 	padding:6px 0;
 	margin-bottom:25px;
 }
@@ -65,12 +65,59 @@ body {
 	outline:none;
 	border:none;
 	border-bottom:1px solid #999;
+	font-family:sans-serif;
+	font-weight:lighter;
+	font-size:15px;
 }
+
+.container div {
+	position:relative;
+}
+
+.container form div label {
+	position:absolute;
+	top:7px;
+	left:0;
+	color:#999;
+	transition:0.5s;
+	pointer-events:none;
+}
+
+.container input:focus ~ label,
+.container select:focus ~ label,
+.container textarea:focus ~ label 
+{
+	top:-13px;
+	font-size:12px;
+	font-weight:bold;
+	color:#824b60;
+}
+
+.container input:valid ~ label,
+.container select:valid ~ label,
+.container textarea:valid ~ label 
+{
+	top:-13px;
+	font-size:12px;
+	font-weight:bold;
+	color:#824b60;
+}
+
+.container input:focus,
+.container select:focus,
+.container textarea:focus,
+.container input:valid,
+.container select:valid,
+.container textarea:valid
+{
+	border-bottom:1px solid #824b60;
+} 
 
 .container input[type="submit"] {
 	 border-bottom:none;
 	 margin-bottom:0;
 	 text-transform: uppercase;
-	 font-weight:bold;
 	 cursor:pointer;
+	 background-color:#824b60;
+	 color:#fff;
 }
