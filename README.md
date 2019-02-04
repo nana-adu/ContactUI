@@ -1,2 +1,2 @@
 # ContactUI
-A static Contact Us page with animated elements designed using HTML &amp; CSS
+A responsive UI for a "contact us" page with animated elements designed using HTML &amp; CSS
