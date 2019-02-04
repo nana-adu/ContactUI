@@ -10,25 +10,22 @@
 </head>
 <body>
 		<div class="container">
-				<div class="logo"><img src="assets/img/tekhubtv.png" alt="Logo" width="90px" height="90px" /></div>
-				<h3>TekHub TV</h3>
+				<div class="logo"><img src="assets/img/tekhubtv.png" alt="Logo" />
+				<h2>TekHub TV</h2>
+				</div>
 
 				<form action="#">
 					<div>
-						<input type="text" name="name" reqired/>
+						<input type="text" name="name" required />
 						<label>Name</label>
 					</div>
 					<div>
-						<input type="email" name="e-mail" reqired/>
+						<input type="email" name="e-mail" required />
 						<label>Email</label>
 					</div>
 					<div>
-						<input type="password" name="pass" reqired/>
-						<label>Password</label>
-					</div>
-					<div>
-						<select name="service">
-							<option value="0">Select</option>
+						<select name="service" required>
+							<option value="0"></option>
 							<option value="1">Intern with us</option>
 							<option value="2">Partner with us</option>
 							<option value="3">Work on a project</option>
@@ -37,8 +34,8 @@
 						<label>How may we help you?</label>
 					</div>
 					<div>
-						<select name="social">
-							<option value="0">Select</option>
+						<select name="social" required>
+							<option value="0"></option>
 							<option value="1">Social Media</option>
 							<option value="2">Family/Friend</option>
 							<option value="3">Company Website</option>
@@ -47,9 +44,10 @@
 						<label>How did you get to know us?</label>
 					</div>
 					<div>
-						<textarea></textarea>
+						<textarea required></textarea>
 						<label>Message</label>
 					</div>
+					<input type="submit" name="" value="submit" />
 				</form>
 
 		</div>		
